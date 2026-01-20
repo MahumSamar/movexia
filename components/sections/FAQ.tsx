@@ -35,7 +35,7 @@ export function FAQ() {
 
   return (
     <Section id="faq" className="bg-background">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}

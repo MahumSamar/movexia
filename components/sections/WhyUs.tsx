@@ -38,7 +38,7 @@ const credentials = {
 export function WhyUs() {
   return (
     <Section id="why-us" className="bg-primary text-primary-foreground overflow-hidden m-8 rounded-2xl">
-      <div className="text-center mb-16 md:mb-24">
+      <div className="text-center mb-12 md:mb-16">
         <Badge className="mb-4 bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground">
           Why us
         </Badge>
@@ -52,7 +52,7 @@ export function WhyUs() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-center max-w-6xl mx-auto">
         {/* Left Column */}
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-12 md:space-y-16">
           {credentials.left.map((item, index) => (
             <motion.div
               key={item.title}
@@ -92,7 +92,7 @@ export function WhyUs() {
         </motion.div>
 
         {/* Right Column */}
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-12 md:space-y-16">
           {credentials.right.map((item, index) => (
             <motion.div
               key={item.title}
@@ -113,22 +113,6 @@ export function WhyUs() {
               </p>
             </motion.div>
           ))}
-        </div>
-      </div>
-
-      {/* CTA Footer */}
-      <div className="mt-20 md:mt-32 flex flex-col items-center gap-6">
-        <div className="flex items-center gap-8">
-          <PrimaryButton className="px-10 h-14 bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-            Details
-          </PrimaryButton>
-          <a
-            href="#"
-            className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary-foreground hover:text-primary-foreground/80 transition-colors gap-2 group"
-          >
-            More
-            <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a>
         </div>
       </div>
     </Section>

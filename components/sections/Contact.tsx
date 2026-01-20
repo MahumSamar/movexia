@@ -26,7 +26,7 @@ export function Contact() {
 
   return (
     <Section id="contact" className="bg-background">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
         {/* Left - Form */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}

@@ -31,7 +31,7 @@ const projects = [
 export function Work() {
   return (
     <Section id="work" className="bg-background">
-      <div className="text-center mb-16 md:mb-24">
+      <div className="text-center mb-12 md:mb-16">
         <Badge className="mb-4">Work</Badge>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tighter text-foreground mb-6">
           Moves we've completed

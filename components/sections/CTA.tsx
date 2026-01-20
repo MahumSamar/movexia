@@ -10,7 +10,7 @@ import Image from "next/image";
 export function CTA() {
   return (
     <Section id="cta" className="bg-background">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}

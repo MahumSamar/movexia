@@ -39,7 +39,7 @@ export function Testimonials() {
 
   return (
     <Section id="testimonials" className="bg-background overflow-hidden">
-      <div className="text-center mb-16 md:mb-24">
+      <div className="text-center mb-12 md:mb-16">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tighter text-foreground mb-4">
           Real voices
         </h2>
