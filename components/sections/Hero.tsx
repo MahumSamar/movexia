@@ -112,15 +112,15 @@ export function Hero() {
               <div className="flex items-center gap-8 pt-6 border-t border-border">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="text-primary w-5 h-5 flex-shrink-0" />
-                  <span className="text-sm font-medium whitespace-nowrap">Fully Insured</span>
+                  <span className="text-xs sm:text-sm font-medium whitespace-nowrap">Fully Insured</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Truck className="text-primary w-5 h-5 flex-shrink-0" />
-                  <span className="text-sm font-medium whitespace-nowrap">Fast Service</span>
+                  <span className="text-xs sm:text-sm font-medium whitespace-nowrap">Fast Service</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="text-primary w-5 h-5 flex-shrink-0" />
-                  <span className="text-sm font-medium whitespace-nowrap">Local Experts</span>
+                  <span className="text-xs sm:text-sm font-medium whitespace-nowrap">Local Experts</span>
                 </div>
               </div>
             </motion.div>
