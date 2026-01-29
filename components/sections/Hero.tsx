@@ -25,30 +25,40 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="absolute bottom-12 right-6 md:right-12 lg:right-24 z-10 w-[calc(100%-3rem)] md:w-auto"
+          className="absolute bottom-12 right-6 md:right-12 lg:right-24 z-10 w-[calc(100%-3rem)] w-auto"
         >
           {/* Rectangular Glassmorphism Stats Card */}
-          <div className="bg-white/40 backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-white/30 shadow-2xl md:min-w-[540px]">
-            <div className="grid grid-cols-3 gap-6 md:gap-10 divide-x divide-white/20">
+          <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-6 border border-white/30 shadow-2xl flex items-center gap-6">
+            {/* Trust Badge Image */}
+            <div className="relative w-36 h-36 shrink-0 rounded-xl overflow-hidden hidden md:block">
+              <Image 
+                src="/images/trust.png" 
+                alt="Trust Badge" 
+                fill 
+                className="object-contain" 
+              />
+            </div>
+
+            <div className="flex flex-col gap-4">
               {/* Stat 1 */}
-              <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                <span className="text-2xl md:text-3xl font-bold text-foreground mb-1 tracking-tight">5k+</span>
-                <span className="text-[10px] md:text-xs font-bold text-foreground/60 uppercase tracking-widest">Moves Made</span>
+              <div className="flex items-center gap-3">
+                <span className="text-2xl md:text-3xl font-medium text-foreground tracking-tight w-20">5k+</span>
+                <span className="text-[10px] md:text-xs font-medium text-foreground/60 uppercase tracking-widest">Moves Made</span>
               </div>
               
               {/* Stat 2 */}
-              <div className="flex flex-col items-center md:items-start text-center md:text-left pl-6 md:pl-10">
-                <div className="flex items-center gap-1 mb-1">
-                  <span className="text-2xl md:text-3xl font-bold text-foreground tracking-tight">4.9</span>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center justify-start gap-1 w-20">
+                  <span className="text-2xl md:text-3xl font-medium text-foreground tracking-tight">4.9</span>
                   <Star className="text-primary w-4 h-4 md:w-5 md:h-5 fill-current" />
                 </div>
-                <span className="text-[10px] md:text-xs font-bold text-foreground/60 uppercase tracking-widest">Client Rating</span>
+                <span className="text-[10px] md:text-xs font-medium text-foreground/60 uppercase tracking-widest">Client Rating</span>
               </div>
 
               {/* Stat 3 */}
-              <div className="flex flex-col items-center md:items-start text-center md:text-left pl-6 md:pl-10">
-                <span className="text-2xl md:text-3xl font-bold text-foreground mb-1 tracking-tight">15+</span>
-                <span className="text-[10px] md:text-xs font-bold text-foreground/60 uppercase tracking-widest">Years Exp.</span>
+              <div className="flex items-center gap-3">
+                <span className="text-2xl md:text-3xl font-medium text-foreground tracking-tight w-20">15+</span>
+                <span className="text-[10px] md:text-xs font-medium text-foreground/60 uppercase tracking-widest">Years Exp.</span>
               </div>
             </div>
           </div>

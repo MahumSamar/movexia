@@ -37,7 +37,11 @@ const credentials = {
 
 export function WhyUs() {
   return (
-    <Section id="why-us" className="bg-primary text-primary-foreground overflow-hidden m-8 rounded-2xl">
+    <Section id="why-us" className="bg-primary text-primary-foreground overflow-hidden m-8 rounded-4xl relative group shadow-[inset_4px_4px_22.8px_10px_rgba(253,242,214,0.28)]">
+      {/* Background Blobs - Scaled up for section size */}
+      <div className="absolute -left-24 -top-24 w-96 h-48 bg-secondary rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700 pointer-events-none opacity-40" />
+      <div className="absolute -right-24 -bottom-24 w-96 h-48 bg-secondary rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700 pointer-events-none opacity-40" />
+
       <div className="text-center mb-12 md:mb-16">
         <Badge className="mb-4 bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground">
           Why us

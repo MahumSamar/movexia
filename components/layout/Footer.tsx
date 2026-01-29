@@ -31,7 +31,11 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground rounded-t-4xl overflow-hidden">
+    <footer className="bg-primary text-primary-foreground m-4 md:m-8 rounded-4xl overflow-hidden relative group shadow-[inset_4px_4px_22.8px_10px_rgba(253,242,214,0.28)]">
+      {/* Background Blobs - Scaled for footer */}
+      <div className="absolute -left-32 -top-32 w-[32rem] h-[32rem] bg-secondary rounded-full blur-[6rem] group-hover:scale-110 transition-transform duration-1000 pointer-events-none opacity-30" />
+      <div className="absolute -right-32 -bottom-32 w-[32rem] h-[32rem] bg-secondary rounded-full blur-[6rem] group-hover:scale-110 transition-transform duration-1000 pointer-events-none opacity-30" />
+
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           {/* Brand & Newsletter */}

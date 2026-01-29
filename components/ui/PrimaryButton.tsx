@@ -8,7 +8,7 @@ export function PrimaryButton({ className, children, ...props }: PrimaryButtonPr
   return (
     <Button
       className={cn(
-        "relative group bg-primary text-primary-foreground hover:bg-primary/95 shadow-lg transition-all duration-300 active:scale-95 rounded-full overflow-hidden border-none",
+        "relative border-primary group bg-primary text-primary-foreground hover:bg-primary/95 shadow-[inset_4px_4px_22.8px_5px_rgba(253,242,214,0.28)] transition-all duration-300 active:scale-95 rounded-full overflow-hidden border-none",
         className
       )}
       {...props}
